@@ -4,7 +4,9 @@ import { secciones } from './secciones.js'
 
 export default function Layout() {
   const { pathname } = useLocation()
-  useEffect(() => window.scrollTo(0, 0), [pathname])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
 
   return (
     <div className="pagina">
